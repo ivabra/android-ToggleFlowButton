@@ -14,24 +14,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <com.dantelab.flowbutton.library.FlowButton
+        android:layout_centerInParent="true"
         android:id="@+id/flow"
-        android:layout_width="72dp"
-        android:layout_height="72dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         app:flowbutton_firstIcon="@drawable/ic_launcher"
         app:flowbutton_secontIcon="@drawable/ic_navigation_drawer"
         app:flowbutton_shadowRadius="5dp"
-        app:flowbutton_shadowColor="@android:color/black"
+        app:flowbutton_shadowColor="@android:color/darker_gray"
         app:flowbutton_firstColor="@android:color/white"
         app:flowbutton_secondColor="@android:color/holo_blue_light"
         app:flowbutton_iconPadding="20dp"
-        app:flowbutton_shadowOffsetX="5dp"
         app:flowbutton_shadowOffsetY="5dp"
         app:flowbutton_animationInterpolator="@android:interpolator/decelerate_cubic"
         app:flowbutton_toggleTransitionDirection="0"
         app:flowbutton_animationDuration="700"
         app:flowbutton_toggleTransitionFactor="1.4"
         app:flowbutton_clickDelay="700"
-        app:flowbutton_mode="click"
+        app:flowbutton_mode="toggle"
         />
 
 </RelativeLayout>

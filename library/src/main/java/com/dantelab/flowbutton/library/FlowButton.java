@@ -607,13 +607,23 @@ public class FlowButton extends View {
 
         private void drawToggleAnimationBitmapInAnimation(Canvas canvas, Bitmap bmp, float progress) {
             mMatrix.reset();
+
             mAnimationBitmapRect.set(0, 0, bmp.getWidth(), bmp.getHeight());
+            int cX = mIconRect.centerX();
+            int cY = mIconRect.centerY();
+            mAnimationScaledRect.set(
+                    mIconRect.left + progress*(cX - mIconRect.left),
+                    mIconRect.top + progress*(cY - mIconRect.top),
+                    mIconRect.right - progress*( mIconRect.right - cX),
+                    mIconRect.bottom - progress*( mIconRect.bottom - cY)
+            );
+           /* mAnimationBitmapRect.set(0, 0, bmp.getWidth(), bmp.getHeight());
             mAnimationScaledRect.set(
                     mIconRect.left + progress * bmp.getWidth() / 2,
                     mIconRect.top + progress * bmp.getHeight() / 2,
                     mIconRect.right - progress * bmp.getWidth() / 2,
                     mIconRect.bottom - progress * bmp.getHeight() / 2
-            );
+            );*/
 
             mMatrix.setRectToRect(mAnimationBitmapRect, mAnimationScaledRect, Matrix.ScaleToFit.CENTER);
             canvas.drawBitmap(bmp, mMatrix, null);
