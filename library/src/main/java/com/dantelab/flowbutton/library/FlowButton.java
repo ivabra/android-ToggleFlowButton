@@ -241,7 +241,7 @@ public class FlowButton extends View {
         int padLeft = getPaddingLeft();
         int padRight = getPaddingRight();
 
-        mCircleRect = new RectF(padLeft + (mShadowRadius - mShadowOffsetX), padTop + (mShadowRadius - mShadowOffsetY), getWidth() - padRight - (mShadowRadius + mShadowOffsetX), getHeight() - padBottom - (mShadowRadius + mShadowOffsetY));
+        mCircleRect = new RectF(padLeft + Math.max(mShadowRadius - mShadowOffsetX, 0), padTop + Math.max(mShadowRadius - mShadowOffsetY, 0), getWidth() - Math.max(padRight + mShadowRadius + mShadowOffsetX, 0), getHeight() -Math.max( padBottom +mShadowRadius+ mShadowOffsetY, 0));
         mIconRect = new Rect((int) mCircleRect.left + (int) mIconPaddingLeft, (int) mCircleRect.top + (int) mIconPaddingTop, (int) mCircleRect.right - mIconPaddingRight, (int) mCircleRect.bottom - mIconPaddingBottom);
         //invalidate();
     }
