@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlowButton">
+
+        <attr name="flowbutton_shadowOffsetY" format="dimension"/>
+        <attr name="flowbutton_pressed" format="boolean"/>
+        <attr name="flowbutton_firstIcon" format="reference"/>
+        <attr name="flowbutton_secontIcon" format="reference"/>
+        <attr name="flowbutton_shadowRadius" format="dimension"/>
+        <attr name="flowbutton_shadowColor" format="color"/>
+        <attr name="flowbutton_firstColor" format="color"/>
+        <attr name="flowbutton_secondColor" format="color"/>
+        <attr name="flowbutton_shadowOffsetX" format="dimension"/>
+
+        <attr name="flowbutton_iconPadding" format="dimension"/>
+        <attr name="flowbutton_iconPaddingLeft" format="dimension"/>
+        <attr name="flowbutton_iconPaddingRight" format="dimension"/>
+        <attr name="flowbutton_iconPaddingTop" format="dimension"/>
+        <attr name="flowbutton_iconPaddingBottom" format="dimension"/>
+        <attr name="flowbutton_toggleTransitionDirection" format="float"/>
+        <attr name="flowbutton_toggleTransitionFactor" format="float"/>
+        <attr name="flowbutton_animationInterpolator" format="reference"/>
+        <attr name="flowbutton_animationDuration" format="integer"/>
+        <attr name="flowbutton_clickDelay" format="integer"/>
+
+        <attr name="flowbutton_mode" format="enum">
+            <enum name="toggle" value="1"/>
+            <enum name="click" value="0"/>
+        </attr>
+
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app= "http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.dantelab.flowbutton.library.FlowButton
+        android:id="@+id/flow"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:flowbutton_firstIcon="@drawable/ic_launcher"
+        app:flowbutton_secontIcon="@drawable/ic_navigation_drawer"
+        app:flowbutton_shadowRadius="5dp"
+        app:flowbutton_shadowColor="@android:color/black"
+        app:flowbutton_firstColor="@android:color/white"
+        app:flowbutton_secondColor="@android:color/holo_blue_light"
+        app:flowbutton_iconPadding="20dp"
+        app:flowbutton_shadowOffsetX="5dp"
+        app:flowbutton_shadowOffsetY="5dp"
+        app:flowbutton_animationInterpolator="@android:interpolator/decelerate_cubic"
+        app:flowbutton_toggleTransitionDirection="0"
+        app:flowbutton_animationDuration="700"
+        app:flowbutton_toggleTransitionFactor="1.4"
+        app:flowbutton_clickDelay="700"
+        app:flowbutton_mode="click"
+        />
+
+</RelativeLayout>
